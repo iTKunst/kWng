@@ -1,0 +1,24 @@
+FROM johnpapa/angular-cli
+
+# Constants
+ENV APP        kwng
+ENV SERVICES   /usr/local/hcn/services
+ENV DIR_PROJ   $SERVICES/$APP
+ENV HCN_PORT   4203
+
+EXPOSE $HCN_PORT
+
+COPY package.json /tmp/package.json
+RUN cd /tmp && npm install
+RUN mkdir -p $DIR_PROJ && cp -a /tmp/node_modules $DIR_PROJ
+
+WORKDIR $DIR_PROJ
+
+COPY karma.conf.js .
+COPY protractor.conf.js .
+COPY tsconfig.json .
+COPY tslint.json .
+
+COPY ./.angular-cli.json .
+
+CMD ["/bin/sh"]

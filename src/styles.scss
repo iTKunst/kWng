@@ -1,0 +1,97 @@
+@import '~@angular/material/theming';
+
+@import '~normalize.css/normalize.css';
+@import '~angular-calendar/scss/angular-calendar.scss';
+//@import "~highlight.js/styles/androidstudio.css";
+@import "~quill/dist/quill.snow.css";
+@import "styles/var";
+
+@include mat-core();
+
+//@import 'styles/tables';
+//@import "styles/cards";
+//@import "styles/inbox";
+//@import "styles/calendar";
+//@import "styles/misc";
+//@import "styles/tabs";
+
+@import "styles/var";
+@import "styles/core";
+@import "styles/mixins";
+
+
+@keyframes pageLoad {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.page-load-animation {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  animation: pageLoad linear 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  background: #2B303B;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+
+
+:host {
+  //min-height: 100%;
+  //display: flex;
+}
+
+body, html {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: block;
+
+}
+  //max-width: 100%;
+
+  //  box-sizing: border-box;
+
+  //  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 1em;
+//  line-height: 1em;
+
+  // We are defining the text color with a mixin
+//  @include default-text-color($black);
+}
+
+
+.app-container {
+  //height: 100vh;
+//  display: flex;
+//  min-height: 100vh;
+//  max-width: 100vh;
+}
+
+
+// Fixes overlapping issues
+// Makes the rendered box elements padding, borders, etc.
+// fit into the width
+
+* {
+//  -webkit-box-sizing: border-box;
+//  -moz-box-sizing: border-box;
+//  box-sizing: border-box;
+}

@@ -1,0 +1,102 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "outDir": "../out-tsc/app",
+    "target": "es5",
+    "module": "es2015",
+    "baseUrl": "",
+    "types": ["node"],
+    "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@appCore/*": [
+        "app/core/*"
+      ],
+      "@appEnv/*": [
+        "app/core/*"
+      ],
+      "@dw/*": [
+        "dw/*"
+      ],
+      "@dwComp/*": [
+        "dw/comp/*"
+      ],
+      "@dwCore/*": [
+        "dw/core/*"
+      ],
+      "@dwPage/*": [
+        "dw/page/*"
+      ],
+      "@dwState/*": [
+        "dw/state/*"
+      ],
+      "@env/*": [
+        "env/*"
+      ],
+      "@kw/*": [
+        "kw/*"
+      ],
+      "@kwBS/*": [
+        "kw/BS/*"
+      ],
+      "@kwClass/*": [
+        "kw/class/*"
+      ],
+      "@kwCtrl/*": [
+        "kw/ctrl/*"
+      ],
+      "@kwState/*": [
+        "kw/state/*"
+      ],
+      "@kwNg/*": [
+        "kwNg/*"
+      ],
+      "@kwNgBS/*": [
+        "kwNg/BS/*"
+      ],
+      "@kwNgClass/*": [
+        "kwNg/class/*"
+      ],
+      "@kwNgCore/*": [
+        "kwNg/core/*"
+      ],
+      "@kwNgHttp/*": [
+        "kwNg/http/*"
+      ],
+      "@kwNgPage/*": [
+        "kwNg/page/*"
+      ],
+      "@kwNgState/*": [
+        "kwNg/state/*"
+      ],
+      "@kwNgView/*": [
+        "kwNgView/*"
+      ],
+      "@kwNgViewCore/*": [
+        "kwNgView/core/*"
+      ],
+      "@kwView/*": [
+        "kwView/*"
+      ],
+      "@kwViewClass/*": [
+        "kwView/class/*"
+      ],
+      "@kwViewState/*": [
+        "kwView/state/*"
+      ]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
